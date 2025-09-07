@@ -14,8 +14,7 @@ export class Awzk1200aComponent {
   constructor(private router: Router, private location: Location) {}
 
   ngOnInit() {
-    const state = this.location.getState() as { data?: string };
-    console.log('test-aに入った:', state?.data);
+    console.log('test-aに入った:');
   }
 
   goToB() {

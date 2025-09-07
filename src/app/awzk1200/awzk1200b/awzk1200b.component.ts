@@ -18,7 +18,7 @@ export class Awzk1200bComponent {
     console.log('test-bに入った:', state?.data);
   }
 
-  goToA() {
-    this.router.navigate(['/awzk1200/a'], { state: { data: this.dataToSend } });
+  goBack() {
+    this.location.back();
   }
 }
