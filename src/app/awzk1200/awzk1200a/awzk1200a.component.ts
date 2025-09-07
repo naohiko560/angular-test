@@ -9,7 +9,10 @@ import { Location } from '@angular/common';
 })
 export class Awzk1200aComponent {
   receivedData: string = '';
-  dataToSend = 'Aのデータ';
+  dataToSend = {
+    id: 12345,
+    message: 'AからBへ渡すデータ',
+  };
 
   constructor(private router: Router, private location: Location) {}
 
