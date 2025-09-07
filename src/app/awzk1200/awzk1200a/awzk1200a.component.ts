@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
 })
 export class Awzk1200aComponent {
   receivedData: string = '';
-  dataToSend = 'AからBへ渡すデータ';
+  dataToSend = 'Aのデータ';
 
   constructor(private router: Router, private location: Location) {}
 
@@ -19,5 +19,9 @@ export class Awzk1200aComponent {
 
   goToB() {
     this.router.navigate(['/awzk1200/b'], { state: { data: this.dataToSend } });
+  }
+
+  goToC() {
+    this.router.navigate(['/awzk1200/c'], { state: { data: this.dataToSend } });
   }
 }
