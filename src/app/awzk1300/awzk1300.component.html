@@ -1,0 +1,10 @@
+<div *ngIf="showA">
+  <h2>awzk1300A画面</h2>
+  <button (click)="goToB()">Bへ遷移（データ渡し）</button>
+  <div>受け取ったデータ: {{ dataBtoA?.id }}</div>
+</div>
+<div *ngIf="!showA">
+  <h2>awzk1300B画面</h2>
+  <button (click)="goToA()">Aへ遷移（データ渡し）</button>
+  <div>受け取ったデータ: {{ dataAtoB?.id }}</div>
+</div>
